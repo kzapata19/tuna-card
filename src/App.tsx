@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
-import { Card, CardMedia, CardContent, Typography, Box } from '@mui/material';
+import React, { useState } from "react";
+import { Card, CardMedia, CardContent, Typography, Box } from "@mui/material";
 
 const cardStyles = {
-  perspective: '1000px',
-  width: '100%',
+  perspective: "1000px",
+  width: "100%",
   maxWidth: 330,
-  margin: 'auto',
+  margin: "auto",
   mt: 4,
 };
 
 const innerStyles = (flipped: boolean) => ({
-  position: 'relative',
-  width: '100%',
-  height: 710, 
-  transformStyle: 'preserve-3d',
-  transition: 'transform 0.8s',
-  transform: flipped ? 'rotateY(180deg)' : 'none',
+  position: "relative",
+  width: "100%",
+  height: 710,
+  transformStyle: "preserve-3d",
+  transition: "transform 0.8s",
+  transform: flipped ? "rotateY(180deg)" : "none",
 });
 
 const faceStyles = {
-  position: 'absolute',
-  width: '100%',
-  height: '100%',
-  WebkitBackfaceVisibility: 'hidden',
-  backfaceVisibility: 'hidden',
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  WebkitBackfaceVisibility: "hidden",
+  backfaceVisibility: "hidden",
   borderRadius: 12,
-  overflow: 'hidden',
-  boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
+  overflow: "hidden",
+  boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
 };
 
 const frontStyles = {
@@ -35,10 +35,10 @@ const frontStyles = {
 
 const backStyles = {
   ...faceStyles,
-  backgroundColor: '#fffdf7',
-  transform: 'rotateY(180deg)',
+  backgroundColor: "#fffdf7",
+  transform: "rotateY(180deg)",
   // padding: '0.5rem',
-  overflowY: 'auto',
+  overflowY: "auto",
   fontFamily: '"Indie Flower", cursive',
 };
 
@@ -54,24 +54,38 @@ export default function App() {
               component="img"
               image="tuna.jpg"
               alt="Tuna the cat"
-              sx={{ height: 710, objectFit: 'cover' }}
+              sx={{ height: 710, objectFit: "cover" }}
             />
           </Card>
         </Box>
         <Box sx={backStyles}>
           <CardContent
             sx={{
-              height: '100%',
+              height: "100%",
               maxHeight: 710,
-              overflowY: 'auto',
+              overflowY: "auto",
               paddingRight: 1, // optional: makes room for the scrollbar
             }}
           >
-            <Typography variant="body1" component="div" sx={{ whiteSpace: 'pre-line', fontSize: '1.1rem' }}>
-              {`
-              April 8, 2025
+            <Typography
+              variant="body1"
+              component="div"
+              sx={{
+                textAlign: "right",
+                pr: 2,
+                fontSize: "0.875rem", // slightly smaller than default body1
+                color: "rgba(0, 0, 0, 0.6)", // more transparent black
+              }}
+            >
+              {`April 8, 2025`}
+            </Typography>
 
-              To my dearest love,
+            <Typography
+              variant="body1"
+              component="div"
+              sx={{ whiteSpace: "pre-line", fontSize: "1.1rem" }}
+            >
+              {`To my dearest love,
 
 Since I can't hand you a physical card this time, I’m sending you one via the interwebs. I hope your flight went smoothly.
 
