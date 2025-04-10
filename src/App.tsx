@@ -4,7 +4,7 @@ import { Card, CardMedia, CardContent, Typography, Box } from '@mui/material';
 const cardStyles = {
   perspective: '1000px',
   width: '100%',
-  maxWidth: 400,
+  maxWidth: 330,
   margin: 'auto',
   mt: 4,
 };
@@ -12,7 +12,7 @@ const cardStyles = {
 const innerStyles = (flipped: boolean) => ({
   position: 'relative',
   width: '100%',
-  height: 500,
+  height: 710, 
   transformStyle: 'preserve-3d',
   transition: 'transform 0.8s',
   transform: flipped ? 'rotateY(180deg)' : 'none',
@@ -37,7 +37,7 @@ const backStyles = {
   ...faceStyles,
   backgroundColor: '#fffdf7',
   transform: 'rotateY(180deg)',
-  padding: '1rem',
+  // padding: '0.5rem',
   overflowY: 'auto',
   fontFamily: '"Indie Flower", cursive',
 };
@@ -54,7 +54,7 @@ export default function App() {
               component="img"
               image="tuna.jpg"
               alt="Tuna the cat"
-              sx={{ height: 500, objectFit: 'cover' }}
+              sx={{ height: 710, objectFit: 'cover' }}
             />
           </Card>
         </Box>
