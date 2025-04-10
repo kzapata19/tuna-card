@@ -12,7 +12,7 @@ const cardStyles = {
 const innerStyles = (flipped: boolean) => ({
   position: "relative",
   width: "100%",
-  height: 710,
+  height: 610,
   transformStyle: "preserve-3d",
   transition: "transform 0.8s",
   transform: flipped ? "rotateY(180deg)" : "none",
@@ -59,7 +59,7 @@ export default function App() {
               component="img"
               image="tuna.jpg"
               alt="Tuna the cat"
-              sx={{ height: 710, objectFit: "cover" }}
+              sx={{ height: 610, objectFit: "cover" }}
             />
           </Card>
         </Box>
@@ -67,7 +67,7 @@ export default function App() {
           <CardContent
             sx={{
               height: "100%",
-              maxHeight: 710,
+              maxHeight: 610,
               overflowY: "auto",
               paddingRight: 1, // optional: makes room for the scrollbar
             }}
