@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/tuna-card/static/js/main.bbf2fa3d.js",
+    "main.js": "/tuna-card/static/js/main.7d2d3708.js",
     "index.html": "/tuna-card/index.html",
-    "main.bbf2fa3d.js.map": "/tuna-card/static/js/main.bbf2fa3d.js.map"
+    "main.7d2d3708.js.map": "/tuna-card/static/js/main.7d2d3708.js.map"
   },
   "entrypoints": [
-    "static/js/main.bbf2fa3d.js"
+    "static/js/main.7d2d3708.js"
   ]
 }
