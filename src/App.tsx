@@ -27,6 +27,11 @@ const faceStyles = {
   borderRadius: 12,
   overflow: "hidden",
   boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
+  overflowY: "scroll",
+  scrollbarWidth: "none", // Firefox
+  "&::-webkit-scrollbar": {
+    display: "none", // Chrome, Safari
+  },
 };
 
 const frontStyles = {
