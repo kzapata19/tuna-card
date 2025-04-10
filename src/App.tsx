@@ -59,9 +59,19 @@ export default function App() {
           </Card>
         </Box>
         <Box sx={backStyles}>
-          <CardContent>
+          <CardContent
+            sx={{
+              height: '100%',
+              maxHeight: 710,
+              overflowY: 'auto',
+              paddingRight: 1, // optional: makes room for the scrollbar
+            }}
+          >
             <Typography variant="body1" component="div" sx={{ whiteSpace: 'pre-line', fontSize: '1.1rem' }}>
-              {`To my dearest love,
+              {`
+              April 8, 2025
+
+              To my dearest love,
 
 Since I can't hand you a physical card this time, I’m sending you one via the interwebs. I hope your flight went smoothly.
 
@@ -76,8 +86,9 @@ When thoughts feel overwhelming or irrational, try to notice them without buying
 I hope you find your rhythm soon. One that lets you seize the day, soak in every thrill and tiny comfort, and squeeze all the marrow out of life.
 
 I love you,
+Karen
 
-Karen`}
+`}
             </Typography>
           </CardContent>
         </Box>
